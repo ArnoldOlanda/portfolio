@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 
-import developerImage from '../../assets/develper.jpg'
+import developerImage from '../../assets/developer.jpg'
 
 export const HomePage = () => {
 
