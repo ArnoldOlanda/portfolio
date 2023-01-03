@@ -4,10 +4,10 @@ import { FaChevronRight,FaGithub } from 'react-icons/fa'
 import { TbExternalLink } from 'react-icons/tb'
 // import 'react-slideshow-image/dist/styles.css'
 import repetsImage from '../../assets/repets-app.png'
-import chatMernImage from '../../assets/chat-mern.png'
 import pokeAppImage from '../../assets/poke-app-1.png'
 import youtubeRedesignImage from '../../assets/youtube-redesign.png'
 import todoAppImage from '../../assets/todo-app.png'
+import chatMernImage from '../../assets/chat-mern.png'
 
 const data = [
   {
@@ -46,6 +46,7 @@ const data = [
     visitPageUri:'https://todo-app-z4kvt4.netlify.app'
   },
 ];
+console.log(data);
 
 
 export const ProjectsPage = () => {
