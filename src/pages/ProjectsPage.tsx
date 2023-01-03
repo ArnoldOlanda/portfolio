@@ -6,35 +6,35 @@ import { TbExternalLink } from 'react-icons/tb'
 
 const data = [
   {
-    url: '/assets/repets-app.png',
+    url: './assets/repets-app.png',
     title: 'REPETS Mobile app',
     description:'Aplicacion mobile para reserva de alojamiento para mascotas',
     sourceUri:'https://github.com/ArnoldOlanda/repetsApp',
     visitPageUri:'https://repets.netlify.app'
   },
   {
-    url: '/assets/chat-mern.png',
+    url: './assets/chat-mern.png',
     title: 'Chat app MERN stack',
     description:'Aplicativo web para crear conversaciones y chatear con amigos',
     sourceUri:'https://github.com/ArnoldOlanda/chat-mern-frontend',
     visitPageUri: 'https://chat-mern-z4kvt4.netlify.app/',
   },
   {
-    url: '/assets/poke-app-1.png',
+    url: './assets/poke-app-1.png',
     title: 'Pokemons web app',
     description:'Pagina web para mostrar pokemones consumiendo pokeapi',
     sourceUri:'https://github.com/ArnoldOlanda/poke-app',
     visitPageUri:'https://poke-app-ardev.netlify.app'
   },
   {
-    url: '/assets/youtube-redesign.png',
+    url: './assets/youtube-redesign.png',
     title: 'Youtube redesign',
     description:'Pagina web inspirada en el rediseño de youtube cuyo autor es "sa3duix" ',
     sourceUri:'https://github.com/ArnoldOlanda/youtube-redesign',
     visitPageUri:'https://youtube-redesign-z4kvt4.netlify.app/'
   },
   {
-    url: '/assets/todo-app.png',
+    url: './assets/todo-app.png',
     title: 'Todo app',
     description:'Aplicacion de tareas basica para listar, registrar, actualizar, eliminar tareas',
     sourceUri:'https://github.com/ArnoldOlanda/todo-app-js-frontend',

@@ -4,77 +4,77 @@ const data = [
   {
     id:1,
     name:'HTML5',
-    path:'/assets/html.png',
+    path:'./assets/html.png',
   },
   {
     id:2,
     name:'CSS3',
-    path:'/assets/css.png',
+    path:'./assets/css.png',
   },
   {
     id:3,
     name:'JAVASCRIPT',
-    path:'/assets/javascript.png',
+    path:'./assets/javascript.png',
   },
   {
     id:4,
     name:'TYPESCRIPT',
-    path:'/assets/typescript.svg',
+    path:'./assets/typescript.svg',
   },
   {
     id:5,
     name:'REACT JS',
-    path:'/assets/react.png',
+    path:'./assets/react.png',
   },
   {
     id:6,
     name:'REACT NATIVE',
-    path:'/assets/react-native.png',
+    path:'./assets/react-native.png',
   },
   {
     id:7,
     name:'VUE JS',
-    path:'/assets/vue.png',
+    path:'./assets/vue.png',
   },
   {
     id:8,
     name:'NODE JS',
-    path:'/assets/node.png',
+    path:'./assets/node.png',
   },
   {
     id:9,
     name:'EXPRESS JS',
-    path:'/assets/expressjs.svg',
+    path:'./assets/expressjs.svg',
   },
   {
     id:10,
     name:'SOCKET.IO',
-    path:'/assets/socketio.svg',
+    path:'./assets/socketio.svg',
   },
   {
     id:11,
     name:'GIT',
-    path:'/assets/git.png',
+    path:'./assets/git.png',
   },
   {
     id:12,
     name:'POSTGRESQL',
-    path:'/assets/postgresql.svg',
+    path:'./assets/postgresql.svg',
   },
   {
     id:13,
     name:'MYSQL',
-    path:'/assets/mysql.svg',
+    path:'./assets/mysql.svg',
   },
   {
     id:14,
     name:'MONGODB',
-    path:'/assets/mongodb.svg',
+    path:'./assets/mongodb.svg',
   },
   {
     id:15,
     name:'FIREBASE',
-    path:'/assets/firebase.svg',
+    path:'./assets/firebase.svg',
   }
 ]
 

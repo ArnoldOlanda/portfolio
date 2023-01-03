@@ -18,7 +18,7 @@ export const HomePage = () => {
                 </LeftContent>
                 <RightContent>
                     <StyledImg
-                        src={'/assets/developer.jpg'}
+                        src={'./assets/developer.jpg'}
                         alt="developer image"
                         className='animate__animated animate__fadeIn'
                     />

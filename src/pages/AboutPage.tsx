@@ -70,7 +70,7 @@ export const AboutPage = () => {
         </LeftPanel>
         <RightPanel>
           <img
-            src="/assets/profile.jpg"
+            src="./assets/profile.jpg"
             alt=""
             className='animate__animated animate__fadeIn'
           />
