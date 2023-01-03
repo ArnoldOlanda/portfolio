@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 
-
+import developerImage from '../../assets/develper.jpg'
 
 export const HomePage = () => {
 
@@ -18,7 +18,7 @@ export const HomePage = () => {
                 </LeftContent>
                 <RightContent>
                     <StyledImg
-                        src={'./assets/developer.jpg'}
+                        src={ developerImage }
                         alt="developer image"
                         className='animate__animated animate__fadeIn'
                     />
