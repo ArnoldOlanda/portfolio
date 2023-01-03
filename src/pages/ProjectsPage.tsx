@@ -7,7 +7,7 @@ import repetsImage from '../../assets/repets-app.png'
 import pokeAppImage from '../../assets/poke-app-1.png'
 import youtubeRedesignImage from '../../assets/youtube-redesign.png'
 import todoAppImage from '../../assets/todo-app.png'
-import chatMernImage from '../../assets/chat-mern.png'
+// import chatMernImage from '../../assets/chat-mern.png'
 
 const data = [
   {
@@ -17,13 +17,13 @@ const data = [
     sourceUri:'https://github.com/ArnoldOlanda/repetsApp',
     visitPageUri:'https://repets.netlify.app'
   },
-  {
-    url: chatMernImage,
-    title: 'Chat app MERN stack',
-    description:'Aplicativo web para crear conversaciones y chatear con amigos',
-    sourceUri:'https://github.com/ArnoldOlanda/chat-mern-frontend',
-    visitPageUri: 'https://chat-mern-z4kvt4.netlify.app/',
-  },
+  // {
+  //   url: chatMernImage,
+  //   title: 'Chat app MERN stack',
+  //   description:'Aplicativo web para crear conversaciones y chatear con amigos',
+  //   sourceUri:'https://github.com/ArnoldOlanda/chat-mern-frontend',
+  //   visitPageUri: 'https://chat-mern-z4kvt4.netlify.app/',
+  // },
   {
     url: pokeAppImage,
     title: 'Pokemons web app',
