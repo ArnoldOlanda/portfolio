@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import profileImage from '../../assets/profile.jpg'
 
 const Container = styled.div`
   width: 100%;
@@ -70,7 +71,7 @@ export const AboutPage = () => {
         </LeftPanel>
         <RightPanel>
           <img
-            src="./assets/profile.jpg"
+            src={profileImage}
             alt=""
             className='animate__animated animate__fadeIn'
           />

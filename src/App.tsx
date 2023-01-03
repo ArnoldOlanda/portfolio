@@ -3,9 +3,14 @@ import { Navbar } from './components/Navbar'
 import { NetworkStatusBar } from './components/NetworkStatusBar'
 import { AppRouter } from './router/AppRouter'
 
-const Container = styled.div`
+import developerImage from '../assets/developer.jpg'
+interface ContainerProps{
+  background: string;
+}
+
+const Container = styled.div<ContainerProps>`
   background-color: #141414;
-  background-image: url('/assets/developer.jpg');
+  background-image: url(${({background})=> background });
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -21,7 +26,7 @@ function App() {
   return (
     <div>
       <NetworkStatusBar />
-      <Container>
+      <Container background={developerImage}>
         <BlurFilter>
           <Navbar />
           <AppRouter />

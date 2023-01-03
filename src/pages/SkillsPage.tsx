@@ -1,80 +1,96 @@
 import styled from 'styled-components'
 
+import html from '../../assets/html.png'
+import css from '../../assets/css.png'
+import javascript from '../../assets/javascript.png'
+import typescript from '../../assets/typescript.svg'
+import react from '../../assets/react.png'
+import reactNative from '../../assets/react-native.png'
+import vue from '../../assets/vue.png'
+import node from '../../assets/node.png'
+import expressjs from '../../assets/expressjs.svg'
+import socketio from '../../assets/socketio.svg'
+import git from '../../assets/git.png'
+import postgresql from '../../assets/postgresql.svg'
+import mysql from '../../assets/mysql.svg'
+import mongodb from '../../assets/mongodb.svg'
+import firebase from '../../assets/firebase.svg'
+
 const data = [
   {
     id:1,
     name:'HTML5',
-    path:'./assets/html.png',
+    path:html,
   },
   {
     id:2,
     name:'CSS3',
-    path:'./assets/css.png',
+    path:css,
   },
   {
     id:3,
     name:'JAVASCRIPT',
-    path:'./assets/javascript.png',
+    path:javascript,
   },
   {
     id:4,
     name:'TYPESCRIPT',
-    path:'./assets/typescript.svg',
+    path:typescript,
   },
   {
     id:5,
     name:'REACT JS',
-    path:'./assets/react.png',
+    path:react,
   },
   {
     id:6,
     name:'REACT NATIVE',
-    path:'./assets/react-native.png',
+    path:reactNative,
   },
   {
     id:7,
     name:'VUE JS',
-    path:'./assets/vue.png',
+    path:vue,
   },
   {
     id:8,
     name:'NODE JS',
-    path:'./assets/node.png',
+    path:node,
   },
   {
     id:9,
     name:'EXPRESS JS',
-    path:'./assets/expressjs.svg',
+    path:expressjs,
   },
   {
     id:10,
     name:'SOCKET.IO',
-    path:'./assets/socketio.svg',
+    path:socketio,
   },
   {
     id:11,
     name:'GIT',
-    path:'./assets/git.png',
+    path:git,
   },
   {
     id:12,
     name:'POSTGRESQL',
-    path:'./assets/postgresql.svg',
+    path:postgresql,
   },
   {
     id:13,
     name:'MYSQL',
-    path:'./assets/mysql.svg',
+    path:mysql,
   },
   {
     id:14,
     name:'MONGODB',
-    path:'./assets/mongodb.svg',
+    path:mongodb,
   },
   {
     id:15,
     name:'FIREBASE',
-    path:'./assets/firebase.svg',
+    path:firebase,
   }
 ]
 
