@@ -12,6 +12,12 @@ const Container = styled.div`
   h2{
     font-size: 35px;
   }
+  @media (max-width: 500px){
+    padding-top: 30px;
+    h2{
+      font-size: 30px;
+    }
+  }
 `
 const Content = styled.div`
 
@@ -24,7 +30,11 @@ const Content = styled.div`
     flex-direction: column-reverse;
     width: 100%;
     min-height: 80vh;
-    
+  }
+
+  @media (max-width: 500px){
+    width: 100%;
+    min-height: 70vh;
   }
 `
 const LeftPanel = styled.div`
@@ -37,6 +47,13 @@ const LeftPanel = styled.div`
   align-items: center;
   @media (max-width: 1000px){
     width: 100%;
+  }
+
+  @media (max-width: 500px){
+    p{
+      font-size: 16px;
+      line-height: 1.6rem;
+    }
   }
 `
 const RightPanel = styled.div`

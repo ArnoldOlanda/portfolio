@@ -11,18 +11,18 @@ import chatMernImage from '../../assets/chat-app.png'
 
 const data = [
   {
+    url: chatMernImage,
+    title: 'Chat app',
+    description:'Aplicativo web para crear conversaciones y chatear con amigos',
+    sourceUri:'https://github.com/ArnoldOlanda/chat-mern-frontend',
+    visitPageUri: 'https://chat-mern-z4kvt4.netlify.app/',
+  },
+  {
     url: repetsImage,
     title: 'REPETS Mobile app',
     description:'Aplicacion mobile para reserva de alojamiento para mascotas',
     sourceUri:'https://github.com/ArnoldOlanda/repetsApp',
     visitPageUri:'https://repets.netlify.app'
-  },
-  {
-    url: chatMernImage,
-    title: 'Chat app MERN stack',
-    description:'Aplicativo web para crear conversaciones y chatear con amigos',
-    sourceUri:'https://github.com/ArnoldOlanda/chat-mern-frontend',
-    visitPageUri: 'https://chat-mern-z4kvt4.netlify.app/',
   },
   {
     url: pokeAppImage,
@@ -46,21 +46,21 @@ const data = [
     visitPageUri:'https://todo-app-z4kvt4.netlify.app'
   },
 ];
-console.log(data);
 
 
 export const ProjectsPage = () => {
 
-  const [currentPathImage, setCurrentPathImage] = useState<string>('');
-  const [currentDescription, setCurrentDescription] = useState<string>('');
-  const [sourceCodeLink, setSourceCodeLink] = useState<string>('');
-  const [visitPageLink, setVisitPageLink] = useState<string>('');
+  const [currentPathImage, setCurrentPathImage] = useState<string>(data[0].url);
+  const [currentDescription, setCurrentDescription] = useState<string>(data[0].description);
+  const [sourceCodeLink, setSourceCodeLink] = useState<string>(data[0].sourceUri);
+  const [visitPageLink, setVisitPageLink] = useState<string>(data[0].visitPageUri);
 
   return (
     <Container>
+      
       <Content>
-        <h1 className='animate__animated animate__fadeInLeft'>My Projects</h1>
-        <ListContainer className='animate__animated animate__fadeInLeft animate__delay-1s'>
+        <h1 className='animate__animated animate__fadeIn'>My Projects</h1>
+        <ListContainer className='animate__animated animate__fadeIn'>
           {
             data.map(e=>(
               <div onClick={()=> {
@@ -72,17 +72,19 @@ export const ProjectsPage = () => {
             ))
           }
         </ListContainer>
-        <p style={{ fontSize:'20px', marginTop:'50px' }} >{ currentDescription }</p>
+        <p>{ currentDescription }</p>
       </Content>
+
       <ProjectView className='animate__animated animate__fadeIn'>
         {
           currentPathImage.length > 1
           ? <img 
             className='animate__animated animate__fadeIn' 
             style={{
-              width:'90%', 
+              width:'100%',
+              height:'60%',
               borderRadius:'10px',
-              height:'90%'
+              objectFit:'cover'
             }} 
             src={currentPathImage} alt="img" />
 
@@ -103,23 +105,46 @@ export const ProjectsPage = () => {
 }
 
 const Container = styled.div`
-    color:white;
-    width: 100%;
-    height: 90vh;
-    padding: 100px;
-    display: flex;
-    gap: 50px;
+  color:white;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  padding: 100px;
+  gap: 50px;
+  @media screen and (max-width: 500px){
+    flex-direction: column;
+    padding: 20px;
+  }
 `
 
 const Content = styled.div`
-  width: 25%;
+  width: 30%;
+  position: relative;
+  p{
+    font-size:20px;
+    margin-top:50px;
+  }
+  @media screen and (max-width: 500px){
+    h1{
+      font-size: 20px;
+    }
+    width: 100%;
+    p{
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
 `
 
 const ListContainer = styled.div`
   width: 100%;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   div{
     background-color: #161616;
+    width: 100%;
     height: 60px;
     margin-bottom: 20px;
     font-size: 18px;
@@ -138,6 +163,25 @@ const ListContainer = styled.div`
   }
   div:active{
     transform: scale(0.95);
+  }
+  @media screen and (max-width: 500px){
+    margin-top: 10px;
+    flex-direction: row;
+    overflow: auto;
+    div{
+      min-width: 120px;
+      height: 60px;
+      font-size: 14px;
+      margin-right: 15px;
+      text-align: center;
+      justify-content: center;
+      svg{
+        display:none;
+      }
+    }
+    div:hover{
+      transform: none;
+    }
   }
 `
 
@@ -176,6 +220,15 @@ const ProjectView = styled.div`
       &:hover{
         background-color: #394aa7;
       }
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    width: 100%;
+    height: 40vh;
+    div{
+      width: 90%;
+      gap: 10px;
     }
   }
 

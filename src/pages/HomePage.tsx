@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 
-import developerImage from '../../assets/developer.jpg'
+import developerImage from '../../assets/developer2.jpg'
 
 export const HomePage = () => {
 
@@ -73,13 +73,13 @@ const SocialNetworkContainer = styled.div`
     right: 20px;
     width: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 10px;
-    @media (max-width: 400px){
-        width: 80%;
-        bottom:10px;
-        right: 10px;
+    @media (max-width: 500px){
+        padding: 30px;
+        width: 100%;
+        right: 0;
     }
 `
 const SocialNetwork = styled.a`
@@ -96,6 +96,10 @@ const SocialNetwork = styled.a`
     
     &:hover{
         background-color: #3b3b3b;
+    }
+    @media (max-width: 500px){
+        width: 55px;
+        height: 55px;
     }
 `
 
