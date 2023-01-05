@@ -80,12 +80,6 @@ export const ProjectsPage = () => {
           currentPathImage.length > 1
           ? <img 
             className='animate__animated animate__fadeIn' 
-            style={{
-              width:'100%',
-              height:'60%',
-              borderRadius:'10px',
-              objectFit:'cover'
-            }} 
             src={currentPathImage} alt="img" />
 
           : 'Select a project of the list'
@@ -111,10 +105,17 @@ const Container = styled.div`
   display: flex;
   padding: 100px;
   gap: 50px;
-  @media screen and (max-width: 500px){
+
+  @media screen and (max-width: 1000px){
+    padding: 40px;
+  }
+
+  @media screen and (max-width: 720px){
     flex-direction: column;
     padding: 20px;
   }
+
+  
 `
 
 const Content = styled.div`
@@ -124,7 +125,7 @@ const Content = styled.div`
     font-size:20px;
     margin-top:50px;
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 720px){
     h1{
       font-size: 20px;
     }
@@ -164,10 +165,32 @@ const ListContainer = styled.div`
   div:active{
     transform: scale(0.95);
   }
-  @media screen and (max-width: 500px){
+
+  ::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #4d4d4d;
+    border-radius: 5px;
+  }
+
+
+  @media screen and (max-width: 1000px){
+    div{
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 720px){
     margin-top: 10px;
     flex-direction: row;
     overflow: auto;
+    
     div{
       min-width: 120px;
       height: 60px;
@@ -183,21 +206,29 @@ const ListContainer = styled.div`
       transform: none;
     }
   }
+
 `
 
 const ProjectView = styled.div`
-  /* background-color: #111111a9; */
   border-radius: 10px;
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  img{
+    width:90%;
+    height:90%;
+    border-radius:10px;
+    object-fit:contain;
+  }
+
   div{
     width: 50%;
     height: 100px;
     display: flex;
     justify-content: center;
+    gap: 10px;
     a{
       text-decoration: none;
       margin: auto;
@@ -223,12 +254,40 @@ const ProjectView = styled.div`
     }
   }
 
-  @media screen and (max-width: 500px){
-    width: 100%;
-    height: 40vh;
+  @media screen and (max-width: 1000px){
+    width: 80%;
+    img{
+      width:80%;
+      height:40%;
+      border-radius:10px;
+      object-fit:cover;
+    }
+    div{
+      width: 80%;
+      gap: 10px;
+    }
+  }
+
+  @media screen and (max-width: 720px){
+    min-width: 100%;
+    height: 55vh;
+    justify-content: flex-start;
+    img{
+      width: 100%;
+      height:70%;
+      border-radius:10px;
+      object-fit:cover;
+    }
+
     div{
       width: 90%;
-      gap: 10px;
+      height: 20%;
+    }
+  }
+  @media screen and (max-width: 420px){
+    img{
+      width: 100%;
+      height: 50%;
     }
   }
 

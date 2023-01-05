@@ -21,14 +21,14 @@ const Container = styled.div`
 `
 const Content = styled.div`
 
-  width: 1200px;
+  width: 80%;
   min-width: 300px;
   min-height: 550px;
   padding: 10px;
   display: flex;
   @media (max-width: 1000px){
     flex-direction: column-reverse;
-    width: 100%;
+    width: 80%;
     min-height: 80vh;
   }
 

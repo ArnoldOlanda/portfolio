@@ -75,16 +75,6 @@ const Container = styled.div<StyledContainerProps>`
     align-items: center;
     transition: .3s ease-in-out ;
 
-    div:nth-child(1){
-        width: 100%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        h3{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            flex: 1;
-        }
-    }
 
     button{
         display: none;
@@ -102,6 +92,17 @@ const Container = styled.div<StyledContainerProps>`
         height: 50vh;
         flex-direction: column;
         transform:${({collapsed})=> collapsed ? 'translateY(-100%)' : 'translateY(0)'};
+
+        div:nth-child(1){
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            h3{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                flex: 1;
+            }
+        }
     }
 `
 const Menu = styled.div`
