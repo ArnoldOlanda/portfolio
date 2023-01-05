@@ -260,7 +260,7 @@ const ProjectView = styled.div`
       width:80%;
       height:40%;
       border-radius:10px;
-      object-fit:cover;
+      object-fit:contain;
     }
     div{
       width: 80%;
@@ -276,7 +276,7 @@ const ProjectView = styled.div`
       width: 100%;
       height:70%;
       border-radius:10px;
-      object-fit:cover;
+      object-fit:contain;
     }
 
     div{
