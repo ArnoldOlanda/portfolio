@@ -65,6 +65,7 @@ const RightPanel = styled.div`
   img{
     width: 55%;
     height: 80%;
+    object-fit: contain;
   }
 
   @media (max-width: 1000px){
