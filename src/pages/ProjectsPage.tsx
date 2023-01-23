@@ -8,6 +8,7 @@ import pokeAppImage from '../../assets/poke-app-1.png'
 import youtubeRedesignImage from '../../assets/youtube-redesign.png'
 import todoAppImage from '../../assets/todo-app.png'
 import chatMernImage from '../../assets/chat-app.png'
+import peliculasAppImage from '../../assets/peliculas-app.png'
 
 const data = [
   {
@@ -44,6 +45,13 @@ const data = [
     description:'Aplicacion de tareas basica para listar, registrar, actualizar, eliminar tareas',
     sourceUri:'https://github.com/ArnoldOlanda/todo-app-js-frontend',
     visitPageUri:'https://todo-app-z4kvt4.netlify.app'
+  },
+  {
+    url: peliculasAppImage,
+    title: 'Peliculas app',
+    description:'Aplicacion de peliculas que consume la API de "themoviedb" para consultar las peliculas en cartelera, proximas a estrenarse, etc',
+    sourceUri:'https://github.com/ArnoldOlanda/peliculas_app',
+    visitPageUri:'https://movies-app-artidev.netlify.app/'
   },
 ];
 

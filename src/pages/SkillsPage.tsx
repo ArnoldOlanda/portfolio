@@ -15,6 +15,7 @@ import postgresql from '../../assets/postgresql.svg'
 import mysql from '../../assets/mysql.svg'
 import mongodb from '../../assets/mongodb.svg'
 import firebase from '../../assets/firebase.svg'
+import tailwind from '../../assets/tailwind.svg'
 
 const data = [
   {
@@ -54,41 +55,46 @@ const data = [
   },
   {
     id:8,
+    name:'TAILWIND CSS',
+    path:tailwind,
+  },
+  {
+    id:9,
     name:'NODE JS',
     path:node,
   },
   {
-    id:9,
+    id:10,
     name:'EXPRESS JS',
     path:expressjs,
   },
   {
-    id:10,
+    id:11,
     name:'SOCKET.IO',
     path:socketio,
   },
   {
-    id:11,
+    id:12,
     name:'GIT',
     path:git,
   },
   {
-    id:12,
+    id:13,
     name:'POSTGRESQL',
     path:postgresql,
   },
   {
-    id:13,
+    id:14,
     name:'MYSQL',
     path:mysql,
   },
   {
-    id:14,
+    id:15,
     name:'MONGODB',
     path:mongodb,
   },
   {
-    id:15,
+    id:16,
     name:'FIREBASE',
     path:firebase,
   }
@@ -106,7 +112,9 @@ export const SkillsPage = () => {
         {
           data.map( e =>(
             <Card key={ e.id }> 
-              <StyledImg src={e.path} />
+              <ContainerImg>
+                <StyledImg src={e.path} />
+              </ContainerImg>
               <div>
                 <span>{ e.name }</span>
               </div> 
@@ -168,6 +176,14 @@ const Card = styled.div`
     font-size: 14px;
   }
 `
+const ContainerImg = styled.div`
+  width:90%; 
+  height:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 
 const StyledImg = styled.img`
   width: 6em;
