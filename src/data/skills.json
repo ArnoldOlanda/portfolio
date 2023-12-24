@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "HTML5",
+        "filename": "html.png"
+    },
+    {
+        "id": 2,
+        "name": "CSS3",
+        "filename": "css.png"
+    },
+    {
+        "id": 3,
+        "name": "JAVASCRIPT",
+        "filename": "javascript.png"
+    },
+    {
+        "id": 4,
+        "name": "TYPESCRIPT",
+        "filename": "typescript.svg"
+    },
+    {
+        "id": 5,
+        "name": "REACT JS",
+        "filename": "react.png"
+    },
+    {
+        "id": 6,
+        "name": "REACT NATIVE",
+        "filename": "react-native.png"
+    },
+    {
+        "id": 7,
+        "name": "VUE JS",
+        "filename": "vue.png"
+    },
+    {
+        "id": 8,
+        "name": "TAILWIND CSS",
+        "filename": "tailwind.svg"
+    },
+    {
+        "id": 9,
+        "name": "NODE JS",
+        "filename": "node.png"
+    },
+    {
+        "id": 10,
+        "name": "EXPRESS JS",
+        "filename": "expressjs.svg"
+    },
+    {
+        "id": 11,
+        "name": "SOCKET.IO",
+        "filename": "socketio.svg"
+    },
+    {
+        "id": 17,
+        "name": "NESTJS",
+        "filename": "nest.svg"
+    },
+    {
+        "id": 18,
+        "name": "LARAVEL",
+        "filename": "laravel.svg"
+    },
+    {
+        "id": 12,
+        "name": "GIT",
+        "filename": "git.png"
+    },
+    {
+        "id": 13,
+        "name": "POSTGRESQL",
+        "filename": "postgresql.svg"
+    },
+    {
+        "id": 14,
+        "name": "MYSQL",
+        "filename": "mysql.svg"
+    },
+    {
+        "id": 15,
+        "name": "MONGODB",
+        "filename": "mongodb.svg"
+    },
+    {
+        "id": 16,
+        "name": "FIREBASE",
+        "filename": "firebase.svg"
+    }
+]

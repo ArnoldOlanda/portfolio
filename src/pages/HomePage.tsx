@@ -1,87 +1,79 @@
-import React from 'react';
-import styled from 'styled-components';
-import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
+import React from "react";
+import styled from "styled-components";
+import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
-import developerImage from '../../assets/developer2.jpg'
+import developerImage from "../../public/assets/developer2.jpg";
 
 export const HomePage = () => {
-
     return (
-        <Container>
-
+        <Container id="home-section">
             <Content>
-                <LeftContent
-                    className='animate__animated animate__fadeIn'
-                >
+                <LeftContent className="animate__animated animate__fadeIn">
                     <h1>Hi! My Name is Arnold </h1>
-                    <span>Frontend/Backend Developer</span>
+                    <span>Fullstack Developer</span>
                 </LeftContent>
                 <RightContent>
                     <StyledImg
-                        src={ developerImage }
+                        src={developerImage}
                         alt="developer image"
-                        className='animate__animated animate__fadeIn'
+                        className="animate__animated animate__fadeIn"
                     />
                 </RightContent>
             </Content>
 
-
-            <SocialNetworkContainer
-                className='animate__animated animate__fadeIn'
-            >
-                <SocialNetwork 
-                href='https://www.facebook.com/arnolanthony.olandamunoz/'
-                target='_blank'
+            <SocialNetworkContainer className="animate__animated animate__fadeIn">
+                <SocialNetwork
+                    href="https://www.facebook.com/arnolanthony.olandamunoz/"
+                    target="_blank"
                 >
                     <BsFacebook />
                 </SocialNetwork>
                 <SocialNetwork
-                href='https://www.linkedin.com/in/arnold-olanda-61b671209/'
-                target='_blank'
+                    href="https://www.linkedin.com/in/arnold-olanda-61b671209/"
+                    target="_blank"
                 >
                     <BsLinkedin />
                 </SocialNetwork>
                 <SocialNetwork
-                href='https://twitter.com/z4kvt4?t=kkSSeTKapVFyXOEOYILhhg&s=08'
-                target='_blank'
+                    href="https://twitter.com/z4kvt4?t=kkSSeTKapVFyXOEOYILhhg&s=08"
+                    target="_blank"
                 >
                     <BsTwitter />
                 </SocialNetwork>
                 <SocialNetwork
-                href='https://github.com/ArnoldOlanda'
-                target='_blank'
+                    href="https://github.com/ArnoldOlanda"
+                    target="_blank"
                 >
                     <BsGithub />
                 </SocialNetwork>
             </SocialNetworkContainer>
-
         </Container>
-    )
-}
+    );
+};
 
 const Container = styled.div`
-    min-height: calc(100vh - 50px);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-`
+`;
 
 const SocialNetworkContainer = styled.div`
     height: 60px;
     position: absolute;
-    bottom: 20px;
+    bottom: 45px;
     right: 20px;
     width: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 10px;
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
         padding: 30px;
         width: 100%;
         right: 0;
     }
-`
+`;
 const SocialNetwork = styled.a`
     background-color: #1f1f1f;
     width: 60px;
@@ -91,17 +83,17 @@ const SocialNetwork = styled.a`
     justify-content: center;
     align-items: center;
     color: #fff;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     font-size: 25px;
-    
-    &:hover{
+
+    &:hover {
         background-color: #3b3b3b;
     }
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
         width: 55px;
         height: 55px;
     }
-`
+`;
 
 const Content = styled.div`
     box-sizing: border-box;
@@ -114,12 +106,12 @@ const Content = styled.div`
     align-items: center;
     gap: 20px;
     max-width: 1300px;
-    @media (max-width: 900px){
+    @media (max-width: 900px) {
         flex-direction: column;
         padding: 0px;
         margin: 10px;
     }
-`
+`;
 const LeftContent = styled.div`
     width: 50%;
     display: flex;
@@ -128,25 +120,25 @@ const LeftContent = styled.div`
     padding-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
-    h1{
+    h1 {
         font-size: 5em;
         font-weight: 800;
     }
-    span{
+    span {
         margin-top: 15px;
         font-size: 1.6em;
         font-weight: 100;
     }
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         width: 100%;
-        h1{
+        h1 {
             font-size: 3em;
         }
-        h3{
+        h3 {
             font-size: 1.5em;
-        }   
+        }
     }
-`
+`;
 
 const RightContent = styled.div`
     width: 50%;
@@ -154,19 +146,18 @@ const RightContent = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0 10px;
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         width: 100%;
     }
-`
+`;
 const StyledImg = styled.img`
     min-width: 25em;
     width: 40em;
     border-radius: 10px;
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         width: 80%;
     }
-    @media (max-width: 400px){
+    @media (max-width: 400px) {
         min-width: 100%;
     }
-
-`
+`;
